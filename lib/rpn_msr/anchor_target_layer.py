@@ -5,17 +5,17 @@
 # Written by Ross Girshick and Sean Bell
 # --------------------------------------------------------
 
-import os
 import caffe
-import yaml
-from fast_rcnn.config import cfg
 import numpy as np
 import numpy.random as npr
-from generate_anchors import generate_anchors
-from utils.cython_bbox import bbox_overlaps
+import yaml
 from fast_rcnn.bbox_transform import bbox_transform
+from fast_rcnn.config import cfg
+from utils.cython_bbox import bbox_overlaps
 
-DEBUG = False 
+from generate_anchors import generate_anchors
+
+DEBUG = False
 
 class AnchorTargetLayer(caffe.Layer):
     """

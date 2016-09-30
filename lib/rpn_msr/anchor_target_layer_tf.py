@@ -5,15 +5,13 @@
 # Written by Ross Girshick and Sean Bell
 # --------------------------------------------------------
 
-import os
-import yaml
-from fast_rcnn.config import cfg
 import numpy as np
 import numpy.random as npr
-from generate_anchors import generate_anchors
-from utils.cython_bbox import bbox_overlaps
 from fast_rcnn.bbox_transform import bbox_transform
-import pdb
+from fast_rcnn.config import cfg
+from utils.cython_bbox import bbox_overlaps
+
+from generate_anchors import generate_anchors
 
 DEBUG = False
 

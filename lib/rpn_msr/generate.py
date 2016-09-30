@@ -5,11 +5,12 @@
 # Written by Ross Girshick
 # --------------------------------------------------------
 
+import cv2
+import numpy as np
 from fast_rcnn.config import cfg
 from utils.blob import im_list_to_blob
 from utils.timer import Timer
-import numpy as np
-import cv2
+
 
 def _vis_proposals(im, dets, thresh=0.5):
     """Draw detected bounding boxes."""

@@ -5,13 +5,11 @@
 # Written by Ross Girshick and Sean Bell
 # --------------------------------------------------------
 
-import yaml
 import numpy as np
 import numpy.random as npr
-from fast_rcnn.config import cfg
 from fast_rcnn.bbox_transform import bbox_transform
+from fast_rcnn.config import cfg
 from utils.cython_bbox import bbox_overlaps
-import pdb
 
 DEBUG = False
 
