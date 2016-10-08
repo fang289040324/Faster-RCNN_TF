@@ -11,7 +11,7 @@
 
 import _init_paths
 from fast_rcnn.train import get_training_roidb, train_net
-from fast_rcnn.config import cfg,cfg_from_file, cfg_from_list, get_output_dir
+from fast_rcnn.config import cfg, cfg_from_file, cfg_from_list, get_output_dir
 from datasets.factory import get_imdb
 from networks.factory import get_network
 import argparse
@@ -19,6 +19,7 @@ import pprint
 import numpy as np
 import sys
 import pdb
+
 
 def parse_args():
     """
@@ -59,6 +60,7 @@ def parse_args():
 
     args = parser.parse_args()
     return args
+
 
 if __name__ == '__main__':
     args = parse_args()

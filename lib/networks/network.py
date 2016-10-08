@@ -210,7 +210,7 @@ class Network(object):
             return tf.transpose(tf.reshape(tf.transpose(input, [0, 3, 1, 2]), [input_shape[0],
                                                                                int(d), tf.cast(
                     tf.cast(input_shape[1], tf.float32) * (
-                    tf.cast(input_shape[3], tf.float32) / tf.cast(d, tf.float32)), tf.int32), input_shape[2]]),
+                        tf.cast(input_shape[3], tf.float32) / tf.cast(d, tf.float32)), tf.int32), input_shape[2]]),
                                 [0, 2, 3, 1], name=name)
 
     @layer
